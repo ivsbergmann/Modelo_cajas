@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ejercicio 3</title>
+    <style media="screen" type="text/css">
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            display: inline-block;
+
+        }
+        .flag {
+            border: 1px solid white;
+            height: 350px;
+            margin: 5px auto;
+            width: 525px;
+        }
+
+        .flag-espana {
+            background-color:red;
+            border:1px solid black;
+        }
+
+        .flag-espana__deco {
+            background-color: yellow;
+            border-color:red;
+            border-style: solid;
+            border-width: 80px 0;
+            box-sizing: border-box;
+            height: 100%;
+            width: 100%;
+        }
+
+        .flag-dinamarca {
+            background-color:white;
+            border:1px solid black;
+        }
+
+        .flag-dinamarca__bloque_inf_left,
+        .flag-dinamarca__bloque_inf_right,
+        .flag-dinamarca__bloque_sup_left,
+        .flag-dinamarca__bloque_sup_right {
+            background-color: #F00;
+            border-color: white;
+            border-style:  solid;
+            box-sizing: border-box;
+            float: left;
+            height: 50%;
+        }
+
+        .flag-dinamarca__bloque_inf_left {
+            border-width: 20px 20px 0 0;
+            width: 30%;
+        }
+
+        .flag-dinamarca__bloque_inf_right {
+            border-width: 20px 0 0 20px;
+            width: 70%;
+        }
+
+        .flag-dinamarca__bloque_sup_left {
+            border-width: 0 20px 20px 0;
+            width: 30%;
+        }
+
+        .flag-dinamarca__bloque_sup_right {
+            border-width: 0 0 20px 20px;
+            width: 70%;
+        }
+
+        .flag-emiratos {
+            background-color:white;
+            border: 1px solid black;
+        }
+
+        .flag-emiratos__bloque_left,
+        .flag-emiratos__bloque_right {
+            float: left;
+            height: 100%;
+        }
+
+        .flag-emiratos__bloque_left {
+            background-color: red;
+            width: 25%;
+        }
+
+        .flag-emiratos__bloque_right {
+            border-bottom-color: black;
+            border-top-color: green;
+            border-width: 116px 0;
+            border-style: solid;
+            box-sizing: border-box;
+            width: 75%;
+        }
+
+        .flag-japon {
+            background-color: white;
+            border: 1px solid black;
+        }
+
+        .flag-japon_circle {
+            background-color: red;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin: 100px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <figure class="flag flag-espana">
+            <section class="flag-espana__deco"></section>
+        </figure>
+        <figure class="flag flag-dinamarca">
+            <section class="flag-dinamarca__bloque_sup_left"></section>
+            <section class="flag-dinamarca__bloque_sup_right"></section>
+            <section class="flag-dinamarca__bloque_inf_left"></section>
+            <section class="flag-dinamarca__bloque_inf_right"></section>
+        </figure>
+        <figure class="flag flag-emiratos">
+            <section class="flag-emiratos__bloque_left"></section>
+            <section class="flag-emiratos__bloque_right"></section>
+        </figure>
+        <figure class="flag flag-japon">
+            <section class="flag-japon_circle"></section>
+        </figure>
+    </div>
+</body>
+
+</html>
